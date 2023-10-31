@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Linea1Estaciones">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottonavigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"/>
+
+    <TextView
+        android:id="@+id/metrolinea1"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Linea 1 Estaciones"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="364dp"
+        android:layout_height="169dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="419dp"
+        android:src="@mipmap/lineaa1" />
+
+    <Button
+        android:id="@+id/mapab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="222dp"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        app:cornerRadius="0dp"
+        android:text="Mapa"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

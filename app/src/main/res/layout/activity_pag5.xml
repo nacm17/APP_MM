@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Pag5">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottonavigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"/>
+
+    <TextView
+        android:id="@+id/metroview"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Linea 1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/white">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:layout_marginTop="0dp"
+            android:background="@color/colorGreen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow
+
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row1Name"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row1Surname"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/white">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:layout_marginTop="0dp"
+            android:background="@color/colorGreen">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col11"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow
+
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/tarifa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row2Name"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/Recorrido1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="222dp"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        app:cornerRadius="0dp"
+        android:text="Recorrido" />
+
+
+</RelativeLayout>

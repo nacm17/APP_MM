@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottonavigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/cuenta_icon" />
+
+    <Button
+        android:id="@+id/lineasfav"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="Lineas Favoritas"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/metro"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineasfav"
+        android:layout_gravity="center"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="Metro"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/colectivo"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/metro"
+        android:layout_gravity="center"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="Colectivo"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/micro"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colectivo"
+        android:layout_gravity="center"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="Micro"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primario"
+        android:alpha="0.2">
+    </RelativeLayout>
+
+</RelativeLayout>
